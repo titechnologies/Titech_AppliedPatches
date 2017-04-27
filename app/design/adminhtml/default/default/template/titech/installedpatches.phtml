@@ -1,0 +1,22 @@
+<?php
+/**
+ * Installed Patches template to displays all patch versions in admin side
+ * @see Mage_Core_Block_Template
+ */
+?>
+<script>
+    document.observe('dom:loaded',function(){
+        var patchesMessageText = $('titech-installed-patches').text;
+        var contentarea = $$('.header')[0];
+        contentarea.insert({top: patchesMessageText});
+    });
+</script>
+<script type="text/template" id="titech-installed-patches">
+<?php
+if($this->helper('appliedpatches')->getPatches()){
+    echo '<div style="color:#FFF; background:#64b740;font-weight:bold; text-align:center; padding:5px 5px">'.$this->helper('appliedpatches')->getPatches().'</div>';
+}else{
+    echo '<div style="color:red; background:#64b740;font-weight:bold; text-align:center; padding:5px 5px">applied.patches.list file not found in your server</div>';
+}
+?>
+</script>

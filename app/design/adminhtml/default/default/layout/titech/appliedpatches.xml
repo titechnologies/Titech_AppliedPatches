@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="before_body_end">
+            <block type="core/template" template="titech/installedpatches.phtml" name="titech.installed.patches"/>
+        </reference>
+    </default>
+</layout>
