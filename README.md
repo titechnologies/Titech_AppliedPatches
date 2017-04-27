@@ -1,2 +1,2 @@
-This module is used to fetch applied.patches.list file from magento installation and show all applied patch names in admin side header area. 
-There is NOT any backned configuration, Just install this module and re-login to admin side.
+The purpose of this module is to identify applied.patches.list file from any magento installation and show all applied patch names in admin side header area. 
+There is no backned configuration, install this module and re-login to admin side. Please install at your own risk.
